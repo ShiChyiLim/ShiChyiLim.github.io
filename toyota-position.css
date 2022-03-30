@@ -6,14 +6,14 @@
 }
 
 .first-information{
-    width: 1200px;
+    width: 800px;
     position: relative;
     margin: 50px 0px;
 }
 
 .first-information img{
-    width:100%;
-    height: 550px; 
+    width:700px;
+    /* height: 550px;  */
     padding: 20px;
     background-color: #D0D0D0;
     
@@ -21,10 +21,10 @@
 
 .title01{
     background-color: #CC0000;
-    width: 400px;
+    width: 250px;
     color: white;
-    font-size: 60px;
-    padding: 30px;
+    font-size: 30px;
+    padding: 10px;
     position: relative;
     top: 0;
     left: -250px;
@@ -33,8 +33,8 @@
 .text01{
     background-color: black;
     color: white;
-    width: 400px;
-    padding: 30px;
+    width: 250px;
+    padding: 10px;
     position:absolute;
     left:-250px;
 }
@@ -49,43 +49,43 @@
 }
 
 h1{
-    font-size: 32px;
+    font-size: 18px;
 }
 
 h2{
     color:#CC0000;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h3{
     background-color: black;
     color: white;
-    width:200px;
+    width:120px;
     padding: 10px;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 p{
-    font-size: 25px;
+    font-size: 13px;
 }
 
 .information-details p{
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 .second-information{
-    width: 1200px;
+    width: 800px;
     position: relative;
     margin: 50px 0px;
 }
 
 .title02{
     background-color: #CC0000;
-    width: 400px;
+    width: 250px;
     color: white;
-    font-size: 60px;
-    padding: 30px;
+    font-size: 30px;
+    padding: 10px;
     position: relative;
     right:-85%;
     
@@ -94,16 +94,16 @@ p{
 .text02{
     background-color: black;
     color: white;
-    width: 400px;
-    padding: 30px;
+    width: 250px;
+    padding: 10px;
     position:absolute;
-    right: -280px;
+    right: -150px;
     
 }
 
 .second-information img{
-    width:100%;
-    height: 550px; 
+    width: 700px;;
+    /* height: 550px;  */
     padding: 20px;
     background-color: #D0D0D0;
     
@@ -113,25 +113,25 @@ p{
     background-color: #F5F5F5;
     padding:20px;
     position: relative;
-    right:-280px;
+    right:-150px;
     bottom: 50px;
 
 }
 
 .information-details-2 p{
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 .third-information{
-    width: 1200px;
+    width: 800px;
     position: relative;
     margin: 50px 0px;
 }
 
 .third-information img{
-    width:100%;
-    height: 550px; 
+    width:700px;
+    /* height: 550px;  */
     padding: 20px;
     background-color: #D0D0D0;
     
@@ -139,10 +139,10 @@ p{
 
 .title03{
     background-color: #CC0000;
-    width: 400px;
+    width: 250px;
     color: white;
-    font-size: 60px;
-    padding: 30px;
+    font-size: 30px;
+    padding: 10px;
     position: relative;
     top: 0;
     left: -250px;
@@ -151,8 +151,8 @@ p{
 .text03{
     background-color: black;
     color: white;
-    width: 400px;
-    padding: 30px;
+    width: 250px;
+    padding: 10px;
     position:absolute;
     left:-250px;
 }
@@ -167,22 +167,22 @@ p{
 }
 
 .information-details-3 p{
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 .forth-information{
-    width: 1200px;
+    width: 800px;
     position: relative;
     margin: 50px 0px;
 }
 
 .title04{
     background-color: #CC0000;
-    width: 400px;
+    width: 250px;
     color: white;
-    font-size: 60px;
-    padding: 30px;
+    font-size: 30px;
+    padding: 10px;
     position: relative;
     right:-85%;
     
@@ -191,16 +191,16 @@ p{
 .text04{
     background-color: black;
     color: white;
-    width: 400px;
-    padding: 30px;
+    width: 250px;
+    padding: 10px;
     position:absolute;
-    right: -280px;
+    right: -150px;
     
 }
 
 .forth-information img{
-    width:100%;
-    height: 550px; 
+    width:700px;
+    /* height: 550px;  */
     padding: 20px;
     background-color: #D0D0D0;
     
@@ -210,25 +210,25 @@ p{
     background-color: #F5F5F5;
     padding:20px;
     position: relative;
-    right:-280px;
+    right:-150px;
     bottom: 50px;
 
 }
 
 .information-details-4 p{
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 .fifth-information{
-    width: 1200px;
+    width: 800px;
     position: relative;
     margin: 50px 0px;
 }
 
 .fifth-information img{
-    width:100%;
-    height: 550px; 
+    width:700px;
+    /* height: 550px;  */
     padding: 20px;
     background-color: #D0D0D0;
     
@@ -236,10 +236,10 @@ p{
 
 .title05{
     background-color: #CC0000;
-    width: 400px;
+    width: 250px;
     color: white;
-    font-size: 60px;
-    padding: 30px;
+    font-size: 30px;
+    padding: 10px;
     position: relative;
     top: 0;
     left: -250px;
@@ -248,8 +248,8 @@ p{
 .text05{
     background-color: black;
     color: white;
-    width: 400px;
-    padding: 30px;
+    width: 250px;
+    padding: 10px;
     position:absolute;
     left:-250px;
 }
@@ -264,6 +264,6 @@ p{
 }
 
 .information-details-5 p{
-    font-size: 25px;
-    margin-left: 50px;
+    font-size: 15px;
+    margin-left: 15px;
 }
