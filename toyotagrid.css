@@ -1,0 +1,265 @@
+.center{
+    width:100%;
+    justify-content: center;
+    align-content: center;
+    margin-top:50px;
+    
+}
+.first-information{
+    width:1000px;
+    height:700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+
+.first-information img{
+    grid-column:3/10 ;
+    grid-row: 2/6;
+    width:700px;
+    background-color: #D0D0D0;
+    padding: 20px;
+    
+}
+
+.title01{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: #CC0000;
+    width:250px;
+    color: white;
+    font-size: 30px;
+    padding:10px;
+}
+
+.text01{
+    grid-column: 1/4;
+    grid-row: 2/4  ;
+    background-color: black;
+    color: white;
+    width:250px;
+    padding:10px;
+}
+
+h1{
+    font-size:18px;
+}
+
+p{
+    font-size: 13px;
+}
+
+.information-details{
+    grid-column:2/8;
+    grid-row: 5/10;
+    background-color: #F5F5F5;
+    padding:20px;
+}
+
+
+h2{
+    color:#CC0000;
+    font-size: 20px;
+}
+
+h3{
+    background-color: black;
+    color: white;
+    width:120px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.information-details p{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.second-information{
+    width:1000px;
+    height:700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.second-information img{
+    grid-column:2/9 ;
+    grid-row: 2/6;
+    width:700px;
+    background-color: #D0D0D0;
+    padding: 20px;
+    
+}
+
+.title02{
+    grid-column: 8/10;
+    grid-row: 1/2;
+    background-color: #CC0000;
+    width:250px;
+    color: white;
+    font-size: 30px;
+    padding:10px;
+}
+
+.text02{
+    grid-column: 8/10;
+    grid-row: 2/4  ;
+    background-color: black;
+    color: white;
+    width:250px;
+    padding:10px;
+}
+
+
+.information-details-2{
+    grid-column:4/10;
+    grid-row: 5/9;
+    background-color: #F5F5F5;
+    padding:20px;
+}
+
+.information-details-2 p{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.third-information{
+    width:1000px;
+    height:700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+
+.third-information img{
+    grid-column:3/10 ;
+    grid-row: 2/6;
+    width:700px;
+    background-color: #D0D0D0;
+    padding: 20px;
+    
+}
+
+.title03{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: #CC0000;
+    width:250px;
+    color: white;
+    font-size: 30px;
+    padding:10px;
+}
+
+.text03{
+    grid-column: 1/4;
+    grid-row: 2/4  ;
+    background-color: black;
+    color: white;
+    width:250px;
+    padding:10px;
+}
+
+.information-details-3{
+    grid-column:2/8;
+    grid-row: 5/10;
+    background-color: #F5F5F5;
+    padding:20px;
+}
+
+.forth-information{
+    width:1000px;
+    height:700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.forth-information img{
+    grid-column:2/9 ;
+    grid-row: 2/6;
+    width:700px;
+    background-color: #D0D0D0;
+    padding: 20px;
+    
+}
+
+.title04{
+    grid-column: 8/10;
+    grid-row: 1/2;
+    background-color: #CC0000;
+    width:250px;
+    color: white;
+    font-size: 30px;
+    padding:10px;
+}
+
+.text04{
+    grid-column: 8/10;
+    grid-row: 2/4  ;
+    background-color: black;
+    color: white;
+    width:250px;
+    padding:10px;
+}
+
+
+.information-details-4{
+    grid-column:4/10;
+    grid-row: 5/9;
+    background-color: #F5F5F5;
+    padding:20px;
+}
+
+.information-details-4 p{
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.fifth-information{
+    width:1000px;
+    height:700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+}
+
+.fifth-information img{
+    grid-column:3/10 ;
+    grid-row: 2/6;
+    width:700px;
+    background-color: #D0D0D0;
+    padding: 20px;
+    
+}
+
+.title05{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: #CC0000;
+    width:250px;
+    color: white;
+    font-size: 30px;
+    padding:10px;
+}
+
+.text05{
+    grid-column: 1/4;
+    grid-row: 2/4  ;
+    background-color: black;
+    color: white;
+    width:250px;
+    padding:10px;
+}
+
+.information-details-5{
+    grid-column:2/8;
+    grid-row: 5/9;
+    background-color: #F5F5F5;
+    padding:20px;
+}
