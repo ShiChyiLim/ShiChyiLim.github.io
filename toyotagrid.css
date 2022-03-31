@@ -2,12 +2,12 @@
     width:100%;
     justify-content: center;
     align-content: center;
-    margin-top:50px;
+    margin-top:5%;
     
 }
 .first-information{
     width:800px;
-    height:700px;
+    height:900px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -51,8 +51,8 @@ p{
 }
 
 .information-details{
-    grid-column:2/8;
-    grid-row: 5/10;
+    grid-column:2/9;
+    grid-row: 6/10;
     background-color: #F5F5F5;
     padding:20px;
 }
@@ -77,12 +77,12 @@ h3{
 }
 
 .second-information{
-    width:1000px;
-    height:700px;
+    width:800px;
+    height:900px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
 }
 
 .second-information img{
@@ -115,8 +115,8 @@ h3{
 
 
 .information-details-2{
-    grid-column:4/10;
-    grid-row: 5/9;
+    grid-column:3/10;
+    grid-row: 6/9;
     background-color: #F5F5F5;
     padding:20px;
 }
@@ -127,8 +127,8 @@ h3{
 }
 
 .third-information{
-    width:1000px;
-    height:700px;
+    width:800px;
+    height:900px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -164,19 +164,19 @@ h3{
 }
 
 .information-details-3{
-    grid-column:2/8;
-    grid-row: 5/10;
+    grid-column:2/9;
+    grid-row: 6/10;
     background-color: #F5F5F5;
     padding:20px;
 }
 
 .forth-information{
-    width:1000px;
-    height:700px;
+    width:800px;
+    height:900px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
 }
 
 .forth-information img{
@@ -209,8 +209,8 @@ h3{
 
 
 .information-details-4{
-    grid-column:4/10;
-    grid-row: 5/9;
+    grid-column:3/10;
+    grid-row: 6/9;
     background-color: #F5F5F5;
     padding:20px;
 }
@@ -221,8 +221,8 @@ h3{
 }
 
 .fifth-information{
-    width:1000px;
-    height:700px;
+    width:800px;
+    height:900px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -258,8 +258,8 @@ h3{
 }
 
 .information-details-5{
-    grid-column:2/8;
-    grid-row: 5/9;
+    grid-column:2/9;
+    grid-row: 6/9;
     background-color: #F5F5F5;
     padding:20px;
 }
