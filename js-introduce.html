@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .profileimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #profile{
+            width:auto;
+            height:400px;
+            margin: 20px;
+        }
+
+        .intro{
+            margin: 20px 0px;
+        }
+
+        p{
+            margin:10px 200px;
+            font-size: 20px;
+        }
+
+
+        .images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="profileimg">
+        <img id="profile" src="" alt="">
+    </div>
+
+    <div class="intro">
+        <p id="Name"></p>
+        <p id="Email"></p>
+        <p id="School"></p>
+        <p id="Interest"></p>
+    </div>
+    
+    <div class="images">
+        <img id="image1" src="" alt="">
+        <img id="image2" src="" alt="">
+        <img id="image3" src="" alt="">
+    </div>
+
+    <script>
+        let profileImg =document.getElementById("profile");
+        const profileUrl = "https://shichyilim.github.io/C0BE3441-6153-4311-932E-A3A29B08460D.jpg";
+        profileImg.src = profileUrl;
+        
+        let introduce = ["Amy Lim","amy19990103@gmail.com","Chung Hua University","play game"];
+        document.getElementById("Name").innerText= "Name: "+introduce[0];
+        document.getElementById("Email").innerText= "Email: "+introduce[1];
+        document.getElementById("School").innerText = "School: "+introduce[2];
+        document.getElementById("Interest").innerText = "Interest: "+ introduce[3];
+
+        let imagegroup= document.querySelectorAll(".images img");
+        const imageArray=[
+            "https://shichyilim.github.io/1784C24F-3C76-475D-A246-B8B1F58CBD7E.jpg",
+            "https://shichyilim.github.io/42B1957B-4E17-41DE-BAAB-480AE697A721.jpg",
+            "https://shichyilim.github.io/DF9ED78F-2470-452C-90B6-F10F5CEA3330.jpg"
+        ];
+
+        imageArray.forEach((t,index)=>{imagegroup[index].setAttribute("src",imageArray[index])});
+
+    </script>
+</body>
+</html>

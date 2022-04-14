@@ -486,11 +486,11 @@ h6{
 
 .footer-map{
     width: 100%;
-    background:url(https://img.shoplineapp.com/media/image_clips/5f069a1114b23b004875a301/original.png?1594268176)no-repeat #172B4D;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    color: white;
+    background:url(https://img.shoplineapp.com/media/image_clips/5f069a1114b23b004875a301/original.png?1594268176) no-repeat #172B4D;
+    justify-content:center;
+    align-content:center;
+    display:flex;
+    color:white;
 }
 
 .footer-map-center{
