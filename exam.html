@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+
+        <div class="col-xl-7 m-auto mt-5">
+            <div class="input-group mb-3">
+                <input type="text" id="input-text" class="form-control" placeholder="todo..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="add" >新增</button>
+            </div>
+        </div>
+        <div class="container col-xl-7"></div>
+
+        <template id="wait-program">
+            <div class="m-auto border border-1 border-secondary p-2">
+                <h3>代辦事項</h3>
+                <div class="form-check justify-content-between d-flex ">
+                    <input class="form-check-input my-2" type="checkbox" value="" id="flexCheckDefault">
+                    <input id="resulttext" type="text" class="form-control w-75" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">            
+                    <button id="edit" class="btn btn-warning">編輯</button>
+                    <button id="deleted" class="btn btn-danger">刪除</button>
+                </div>
+            </div>
+            
+        </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        window.onload=function(){
+            let addbtn = document.querySelector("#add")
+            let inputtext = document.querySelector("#input-text")
+            let container = document.querySelector(".container");
+
+            addbtn.addEventListener("click",()=>{
+                
+                container.append(CreateNew(inputtext.value))
+                
+            })
+        }
+        function CreateNew(inputtext){
+            let clone = document.querySelector("#wait-program").content.cloneNode(true);
+            let btnedit = clone.querySelector("#edit");
+            let btndelete = clone.querySelector("#deleted");
+            let resulttext = clone.querySelector("#resulttext");
+            
+            resulttext.value = inputtext;
+            
+            btndelete.addEventListener("click",()=>{
+                
+            })
+            return clone; 
+        }
+        
+        
+        
+    </script>
+
+</body>
+</html>
