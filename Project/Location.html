@@ -118,7 +118,16 @@
             object-fit: cover;
             width: 680px;
             height: 550px;
-            z-index: -1;
+            z-index: -2;
+        }
+
+        .destination{
+            z-index: 1;
+            position: fixed;
+            top:200px;
+            right: 50px;
+            width: 500px;
+            height: 40px;
         }
     }
     </style>
@@ -137,6 +146,15 @@
         </div>
         <div class="location">
             <img src="https://maps.googleapis.com/maps/api/staticmap?size=587x411&zoom=12&center=25.06307,121.5105&scale=1&&client=gme-airbnbinc&channel=monorail-prod&signature=cDMz5J-BkVs8WV0TGcAGw98o2P4%3D" alt="" class="map">
+            <div class="destination input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                </select>
+            </div>
         </div>
             <div class="last-bar">
                 <button type="button" class="back"><strong>返回</strong></button>
