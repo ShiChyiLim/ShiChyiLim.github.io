@@ -1,0 +1,131 @@
+@media(min-width:950px){
+    .video-banner{
+        background-color: black;
+        
+    }
+
+.video{
+        display: block;
+        height: 600px;
+        width: 600px;
+        right:-91px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+.banner-title{
+        text-align: center;
+        margin-top:150px;
+        margin-left:70px;
+        margin-right: 70px;
+    }
+
+.banner-title h1{
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    }
+
+.start{
+        background-color: 	#F00078;
+        padding: 10px 20px ;
+        margin-bottom: 80px;
+    }
+
+.down{
+        display: block;
+        fill:none;
+    }  
+
+.title01 p{
+    font-size: 64px;
+    margin-top: 160px;
+    letter-spacing: -0.em;
+}
+
+.swiper {
+    margin-top: 100px;
+    width: 90%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 20px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.help{
+    background-color:#FF004C;
+    margin:20px;
+    padding: 160px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.question{
+    background:url(https://a0.muscache.com/im/pictures/93ef1829-62d1-4349-8b4a-b02ebc650a25.jpg?im_w=1200&im_q=highq) no-repeat;
+    background-position: center;
+    background-size: 1300px;
+    margin:50px 20px;
+    padding: 160px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.aircover{
+    background: url(https://a0.muscache.com/im/pictures/11e10d64-867e-4dba-b0b4-896026a4f0e0.jpg?im_w=1200&im_q=highq)no-repeat;
+    background-size: contain;
+    background-position:right;
+    border-radius:10px;
+    padding: 50px;
+    margin: 50px 10px;  
+    
+}
+
+.last-video-banner{
+    background-color: black;
+    
+}
+
+.video2{
+    display: block;
+    height: 600px;
+    width: 600px;
+    left:-60px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.banner-title2{
+        text-align: center;
+        margin-top:150px;
+        margin-left:70px;
+        margin-right: 70px;
+}
+
+
+
+}
