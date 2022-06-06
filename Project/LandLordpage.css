@@ -1,12 +1,12 @@
 @media(min-width:950px){
     .video-banner{
         background-color: black;
-        
+        height: 100vh;
     }
 
 .video{
         display: block;
-        height: 600px;
+        height: 100vh;
         width: 600px;
         right:-91px;
         position: relative;
