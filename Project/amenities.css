@@ -1,0 +1,105 @@
+@media(min-width:744px) {
+    .title {
+        background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+        padding: 200px 50px 0px 50px;
+        position: fixed;
+        left: 0;
+
+    }
+
+    .title h1 {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+    }
+
+    .right {
+        width: 50%;
+        position: fixed;
+        right: 0px;
+    }
+
+
+    .btn-group {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-left: 400px;
+        width: 50%;
+        z-index: 0;
+        background-color: white;
+    }
+
+    .btn-h {
+        background-color: black;
+        border-radius: 20px;
+        border: none;
+        margin: 10px;
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+
+    .last-bar {
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        width: 50%;
+        height: 80px;
+        border-top: 2px solid #F0F0F0;
+    }
+
+    .back {
+        position: fixed;
+        right: 540px;
+        bottom: 30px;
+        background-color: transparent;
+        border: none;
+        text-decoration: underline;
+    }
+
+    .next {
+        position: fixed;
+        right: 20px;
+        bottom: 18px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: #D0D0D0;
+    }
+
+    .amenities{
+        position: fixed;
+        top: 20vh;
+        margin-left: 50px;
+        width: 40%;
+        height: 400px;
+        z-index: 1;
+        overflow-y: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .button{
+        width: 90%;
+        margin:0px 8px 16px;
+        height: 25vh;
+        border:1px solid #D0D0D0;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .button:hover{
+        border:2px solid black;
+    }
+    
+
+}
