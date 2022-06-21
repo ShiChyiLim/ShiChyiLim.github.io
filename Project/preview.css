@@ -91,18 +91,8 @@
         background-color: #D0D0D0;
     }
 
-    .amenities{
-        position: fixed;
-        top: 20vh;
-        margin-left: 50px;
-        width: 40%;
-        height: 400px;
-        z-index: 1;
-       
-    }
-
     ::-webkit-scrollbar {
-        width: 5px;
+        width: 0px;
     }
 
     .button{
@@ -119,27 +109,43 @@
     }
 
     .previewarea{
-            position: relative;
+            position:fixed;
             top:20vh;
-            margin: auto;
-            width: 70%;
-            height: 60vh;
+            right: 18vh;
+            width: 30%;
+            height: 63vh;
             z-index:1;
-            padding: 5vh;
-            border: 1px solid black;
-            overflow-y: scroll;
+            padding: 18px;
+            border: 1px solid #D0D0D0;
+            border-radius: 20px;
         }
 
     .area{
-        border:1px red solid;
-        position: relative;
-        padding: 10px;
+        height: 100%;
+        width: 100%;
+        border:1px solid #D0D0D0;
+        overflow-y:scroll;
+        border-radius: 20px;
     }
     
+    .pic{
+        max-height: 250px;
+        width: 100%;
+        
+    }
 
     img{
-        width:200px;
-        height:auto;
+        width:100%;
+        height:100%;
+        background-size: 100%;
+        
+    }
+
+    .text-descrip{
+    background-color: white;
+    position: relative;
+    padding: 15px;
+    
     }
     
 
