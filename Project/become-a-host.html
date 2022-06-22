@@ -5,69 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="become-a-host.css">
     <title>建立房源</title>
-    <style>
-    @media(min-width:950px){
-    .video-banner{
-        background-color: black;
-        
-    }
-
-    .video{
-        display: block;
-        height: 600px;
-        width: 800px;
-        box-sizing: border-box;
-    }
-    .banner-title{
-        text-align: center;
-        margin: 200px 150px 0px;
-    }
-
-    .banner-title h1{
-        font-size: 50px;
-        line-height: 70px;
-        letter-spacing: -0.02em;
-        }
-
-    .start{
-        background-color: 	#F00078;
-        padding: 10px 30px ;
-        position: relative;
-        left: 200px;
-        bottom: -50px;
-    }
-
-.btn-quit{
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    padding: 10px 20px;
-    position: relative;
-    right:-300px;
-    top:-180px;
-    color: white;
-    font-size: 12px;
-}
-
-.btn-quit:hover{
-    color: black;
-}
-
-}
-    </style>
 </head>
 <body>
 
-    <div class="video-banner d-flex justify-content-center">
-        <video autoplay class="video" style="object-fit: cover; object-position:center top;">
+    <div class="video-banner justify-content-center">
+        <video autoplay controls muted loop class="video" style="object-fit: cover; object-position:center top;">
             <source src="https://a0.muscache.com/v/8b/04/8b0456c7-13f8-54bc-889a-7cf549f144a3/8b0456c713f854bc889a7cf549f144a3_4000k_1.mp4" type="video/mp4" style="box-sizing: border-box;">
         </video>
-        <div class="banner-title text-black text-white">
-            <button type="button" class=" btn-quit">退出</button>
-            <h1><strong>成為房東只需10個簡單步驟</strong></h1>
-            <p>加入之後，我們會全程為你提供協助。</p>
-            <button type="button" class="start btn mt-5 text-white "><strong>馬上開始！</strong></button>
+        <div class="banner-title ">
+            <button type="button" class="btn-quit">退出</button>
+            <div class="text">
+                <h1><strong>成為房東只需10個簡單步驟</strong></h1>
+                <p>加入之後，我們會全程為你提供協助。</p>
+                <a href="https://shichyilim.github.io/Project/Property_type_Group.html"><button type="button" class="start btn text-white "><strong>馬上開始！</strong></button></a>
+            </div>
         </div>
     </div>
 
