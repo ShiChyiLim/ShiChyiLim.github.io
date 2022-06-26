@@ -9,33 +9,45 @@
 
     <title>選擇一般住宿類型</title>
     <style>
-        @media(min-width:744px){
+
         .title{
             background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
             background-size: cover;
-            width: 50%;
-            height: 100%;
-            padding: 200px 50px 0px 50px;
+            width: 100%;
+            height: 60vh;
+            display: flex;
             position: fixed;
             left:0;
 
         }
         .title h1{
+            margin: auto;
             text-align: center;
-            font-size: 50px;
+            font-size: 40px;
         }
 
         .right{
-            margin-left: 570px ;
-            margin-top: 10px;
-        }
-        .proprty-type-group{
-            margin: 100px;
+            width: 100%;
+            height: 60vh;
+            position: fixed;
+            right: 0;
+            bottom: -10vh;
             
+            background-color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .property-type-group{
+            overflow: scroll;
+            width: 100%;
+            height: 30vh;
+            margin-top: 5vh;
+            margin-left: 10vh;
+            /* margin-bottom: 50vh; */
         }
         
         .type{
-            width: 450px;
+            width: 70%;
             margin: 20px;
             display:block;
             display:flex;
@@ -46,17 +58,144 @@
             background-color: transparent;
         }
 
+        .type:focus{
+            border:2px solid black; 
+        }
+
         .type:hover{
             border:2px solid black; 
         }
 
-        .proprty-type-group img{
+        .property-type-group img{
             width: 60px;
             vertical-align: middle;
             border-radius: 5px;
         }
 
-        .proprty-type-group p{
+        .property-type-group p{
+            margin:15px 0px;
+            
+        }
+
+        .btn-group{
+            width: 100%;
+            position: fixed;
+            top:0;
+            right: 0;
+            background-color: transparent;
+            padding-top: 20px;
+            padding-bottom: 20px; 
+            justify-content: flex-end;
+            z-index: 0;
+        }
+        .btn-h{
+            width: 20%;
+            background-color: #F0F0F0;
+            border-radius: 20px;
+            border:none;
+            margin: 10px;
+            padding: 5px 10px;
+            font-size: 10px;
+        }
+
+        .last-bar{
+            position: fixed;
+            width: 100%;
+            right:0;
+            bottom:0;   
+            background-color: white;
+            padding: 20px;
+            border-top: 2px solid #F0F0F0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .back{
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            border:none;
+            text-decoration: underline;
+        }
+
+        .next{
+            position: relative;
+            right:0;
+            top:0;
+            padding:10px 15px;
+            width: 20vh;
+            border-radius:10px;
+            border: none;
+            background-color: 	#D0D0D0;
+        }
+
+        ::-webkit-scrollbar {
+        width: 0px;
+        }
+
+
+    
+        @media(min-width:800px){
+        .title{
+            background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
+            background-size: cover;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            left:0;
+        }
+        .title h1{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .right{
+            width: 50%;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            overflow: scroll;
+        }
+        
+        ::-webkit-scrollbar {
+        width: 0px;
+        }
+
+        .type{
+            width: 70%;
+            margin: 20px;
+            display:block;
+            display:flex;
+            justify-content:space-between;  
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: 1px solid #D0D0D0;
+            background-color: transparent;
+        }
+
+        .type:focus{
+            border:2px solid black; 
+        }
+
+        .property-type-group{
+            width: 100%;
+            height: 60vh;
+            margin-top: 18vh;
+            margin-left: 10vh;
+            /* margin-bottom: 40vh; */
+        }
+
+        .property-type-group img{
+            width: 60px;
+            vertical-align: middle;
+            border-radius: 5px;
+        }
+
+        .property-type-group p{
             margin:15px 0px;
             
         }
@@ -64,14 +203,14 @@
         .btn-group{
             position: fixed;
             top:0;
-            right: 10px;
+            right:0;
+            width: 50%;
             background-color: white;
-            padding-top: 20px;
-            padding-bottom: 20px; 
-            padding-left:400px;
             z-index: 0;
         }
         .btn-h{
+            height: 35px;
+            width: 20%;
             background-color: #F0F0F0;
             border-radius: 20px;
             border:none;
@@ -82,20 +221,20 @@
 
         .last-bar{
             position: fixed;
-            right:0px;
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            right:0;
             bottom:0;   
             background-color: white;
-            padding-left: 547px;
-            padding-top: 8px;
-            padding-bottom: 30px;
             width: 50%;
             border-top: 2px solid #F0F0F0;
         }
 
         .back{
-            position: fixed;
-            right:540px;
-            bottom:35px;
+            position: relative;
+            top: 0;
+            left: 0;
             background-color: transparent;
             border:none;
             text-decoration: underline;
@@ -103,9 +242,10 @@
 
         .next{
             position: relative;
-            right:25px;
-            bottom: -10px;
+            right:0;
+            top:0;
             padding:10px 15px;
+            width: 20vh;
             border-radius:10px;
             border: none;
             background-color: 	#D0D0D0;
@@ -125,40 +265,98 @@
                 <button type="button" class="btn-h"><strong>儲存並退出</strong></button>
             </div>
         </div>
-        <div class="proprty-type-group" >
-            <button type="button" class="type">
+        <div class="property-type-group" >
+            <button type="button" class="type" id="apartmentbtn">
                 <p><strong>公寓</strong></p>
                 <img src="https://a0.muscache.com/im/pictures/eadbcbdb-d57d-44d9-9a76-665a7a4d1cd7.jpg?im_w=240" alt="">
             </button>
-            <button type="button" class="type">
+            <button type="button" class="type" id="detachedbtn">
                 <p><strong>獨棟屋房</strong></p>
                 <img src="https://a0.muscache.com/im/pictures/d1af74db-58eb-46bf-b3f5-e42b6c9892db.jpg?im_w=240" alt="">
             </button>
-            <button type="button" class="type">
+            <button type="button" class="type"  id="buidingbtn">
                 <p><strong>附屬建築</strong></p>
                 <img src="https://a0.muscache.com/im/pictures/32897901-1870-4895-8e23-f08dc0e61750.jpg?im_w=240" alt="">
             </button>
-            <button type="button" class="type">
+            <button type="button" class="type" id="specialbtn">
                 <p><strong>獨特房源</strong></p>
                 <img src="https://a0.muscache.com/im/pictures/7ad56bb1-ed9f-4dcb-a14c-2523da331b44.jpg?im_w=240" alt="">
             </button>
-            <button type="button" class="type">
+            <button type="button" class="type" id="familybtn">
                 <p><strong>家庭式旅館</strong></p>
                 <img src="https://a0.muscache.com/im/pictures/d52fb4e7-39a4-46df-9bf9-67e56d35eeca.jpg?im_w=240" alt="">
             </button>
-            <button type="button" class="type">
+            <button type="button" class="type" id="hotelbtn">
                 <p><strong>精品旅店</strong></p>
                 <img src="https://a0.muscache.com/im/pictures/a2c9ad21-b159-4fd2-b417-d810fb23c6a9.jpg?im_w=240" alt="">
             </button>
         </div>
             <div class="last-bar">
                 <button type="button" class="back"><strong>返回</strong></button>
-                <button type="button" class="next text-white">下一步</button>
+                <button type="button" class="next text-white" id="next">下一步</button>
             </div>
     </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        const btn = document.getElementById('next');
+        const aprt = document.getElementById('apartmentbtn');
+        const detached = document.getElementById('detachedbtn');
+        const building = document.getElementById('buidingbtn');
+        const special = document.getElementById('specialbtn');
+        const family = document.getElementById('familybtn');
+        const hotel = document.getElementById('hotelbtn');
+
+            aprt.onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Property-type-apartment.html"
+            }
+            };
+
+            detached.onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Property-type-detached.html"
+            }
+            };
+
+            building.onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Property-type-building.html"
+            }
+            };
+
+            special.onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Property-type-specialhouse.html"
+            }
+            };
+
+            family.onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Property-type-familyhotel.html"
+            }
+            };
+
+            hotel.onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Property-type-Boutiquehotel.html"
+            }
+            };
+            
+            
+        
+        
+        
+    </script>
+
+
 
 </body>
 </html>

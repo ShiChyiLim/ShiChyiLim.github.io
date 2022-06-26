@@ -9,62 +9,209 @@
 
     <title>選擇具體住宿類型</title>
     <style>
-        @media(min-width:744px){
         .title{
             background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
             background-size: cover;
-            width: 50%;
-            height: 100%;
-            padding: 200px 50px 0px 50px;
+            width: 100%;
+            height: 60vh;
+            display: flex;
             position: fixed;
             left:0;
 
         }
         .title h1{
-            font-size: 50px;
+            margin: auto;
+            text-align: center;
+            font-size: 40px;
         }
 
         .right{
-            margin-left: 570px ;
-            margin-top: 10px;
+            width: 100%;
+            height: 60vh;
+            position: fixed;
+            right: 0;
+            bottom: -10vh;
+            background-color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
         }
-        .proprty-type-group{
-            margin: 100px;
-            
+        .property-type-group{
+            overflow: scroll;
+            width: 100%;
+            height: 30vh;
+            margin-top: 5vh;
+            margin-left: 10vh;
         }
         
         .type{
-            width: 450px;
+            width: 70%;
             margin: 20px;
             display:block;
+            display:flex;
+            justify-content:space-between;  
             padding: 10px 30px;
             border-radius: 10px;
             border: 1px solid #D0D0D0;
             background-color: transparent;
-            text-align: left;
+        }
+
+        .type:focus{
+            border:2px solid black; 
         }
 
         .type:hover{
             border:2px solid black; 
         }
 
+        .property-type-group img{
+            width: 60px;
+            vertical-align: middle;
+            border-radius: 5px;
+        }
 
-        .proprty-type-group p{
+        .property-type-group p{
+            margin:15px 0px;
+            
+        }
+
+        .btn-group{
+            width: 100%;
+            position: fixed;
+            top:0;
+            right: 0;
+            background-color: transparent;
+            padding-top: 20px;
+            padding-bottom: 20px; 
+            justify-content: flex-end;
+            z-index: 0;
+        }
+        .btn-h{
+            width: 20%;
+            background-color: #F0F0F0;
+            border-radius: 20px;
+            border:none;
+            margin: 10px;
+            padding: 5px 10px;
+            font-size: 10px;
+        }
+
+        .last-bar{
+            position: fixed;
+            width: 100%;
+            right:0;
+            bottom:0;   
+            background-color: white;
+            padding: 20px;
+            border-top: 2px solid #F0F0F0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .back{
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            border:none;
+            text-decoration: underline;
+        }
+
+        .next{
+            position: relative;
+            right:0;
+            top:0;
+            padding:10px 15px;
+            width: 20vh;
+            border-radius:10px;
+            border: none;
+            background-color: 	#D0D0D0;
+        }
+
+        ::-webkit-scrollbar {
+        width: 0px;
+        }
+        @media(min-width:744px){
+        .title{
+            background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
+            background-size: cover;
+            width: 50%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            left:0;
+
+        }
+        .title h1{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .right{
+            width: 50%;
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            /* overflow: scroll; */
+        }
+        ::-webkit-scrollbar {
+        width: 0px;}
+
+        .property-type-group{
+            overflow:scroll;
+            width: 100%;
+            height: 60vh;
+            margin-top: 18vh;
+            margin-left: 10vh;
+            /* margin-bottom: 100vh; */
+        }
+        
+        .type{
+            height: 15vh;
+            width: 80%;
+            margin: 20px;
+            display:block;
+            display:flex;
+            align-items: center;
+            justify-content:left;  
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: 1px solid #D0D0D0;
+            background-color: transparent;
+        }
+
+        .type:focus{
+            border:2px solid black; 
+        }
+
+        .type:hover{
+            border:2px solid black; 
+        }
+
+        .grouptitle{
+            width: 30%;
+            padding-right:20px;
+            /* margin-right: 10px; */
+        }
+
+        .property-type-group p{
             margin:10px 0px;
+            text-align:start;
             
         }
 
         .btn-group{
             position: fixed;
             top:0;
-            right: 10px;
+            right:0;
+            width: 50%;
             background-color: white;
-            padding-top: 20px;
-            padding-bottom: 20px; 
-            padding-left:400px;
             z-index: 0;
         }
         .btn-h{
+            height: 35px;
+            width: 20%;
             background-color: #F0F0F0;
             border-radius: 20px;
             border:none;
@@ -75,20 +222,20 @@
 
         .last-bar{
             position: fixed;
-            right:0px;
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            right:0;
             bottom:0;   
             background-color: white;
-            padding-left: 547px;
-            padding-top: 8px;
-            padding-bottom: 30px;
             width: 50%;
             border-top: 2px solid #F0F0F0;
         }
 
         .back{
-            position: fixed;
-            right:540px;
-            bottom:35px;
+            position: relative;
+            top: 0;
+            left: 0;
             background-color: transparent;
             border:none;
             text-decoration: underline;
@@ -96,9 +243,10 @@
 
         .next{
             position: relative;
-            right:25px;
-            bottom: -10px;
+            right:0;
+            top:0;
             padding:10px 15px;
+            width: 20vh;
             border-radius:10px;
             border: none;
             background-color: 	#D0D0D0;
@@ -118,100 +266,224 @@
                 <button type="button" class="btn-h"><strong>儲存並退出</strong></button>
             </div>
         </div>
-        <div class="proprty-type-group" >
-            <button type="button" class="type">
-                <p><strong>房源</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">獨棟房屋或與其他建築共用牆壁的房屋。</p>
+        <div class="property-type-group" >
+            <button type="button" class="type" id="one">
+                <p class="grouptitle"><strong>房源</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">獨棟房屋或與其他建築共用牆壁的房屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>小木屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">以木材等天然建材蓋成的房屋，且位於大自然中。</p>
+            <button type="button" class="type" id="two">
+                <p class="grouptitle"><strong>小木屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">以木材等天然建材蓋成的房屋，且位於大自然中。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>別墅</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">豪華住宅，可能具有室內外空間、花園和泳池。</p>
+            <button type="button" class="type" id="three">
+                <p class="grouptitle"><strong>別墅</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">豪華住宅，可能具有室內外空間、花園和泳池。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>連棟房屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">多樓層的連棟房屋或設有露台的房屋，彼此之間有共用牆壁，戶外空間也可能要共享。</p>
+            <button type="button" class="type" id="four">
+                <p class="grouptitle"><strong>連棟房屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">多樓層的連棟房屋或設有露台的房屋，彼此之間有共用牆壁，戶外空間也可能要共享。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>村舍</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">建於鄉間或湖水或海灘附近的溫馨房屋。</p>
+            <button type="button" class="type" id="five">
+                <p class="grouptitle"><strong>村舍</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">建於鄉間或湖水或海灘附近的溫馨房屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>平房</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">具有寬敞的前門廊和傾斜屋頂的單層住宅。</p>
+            <button type="button" class="type" id="six">
+                <p class="grouptitle"><strong>平房</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">具有寬敞的前門廊和傾斜屋頂的單層住宅。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>生態屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">建在地底下或以夯土等材料建成的房屋。</p>
+            <button type="button" class="type" id="seven">
+                <p class="grouptitle"><strong>生態屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">建在地底下或以夯土等材料建成的房屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>船屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">水上的房屋，建造時使用與陸上房屋相似的建材。</p>
+            <button type="button" class="type" id="eight">
+                <p class="grouptitle"><strong>船屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">水上的房屋，建造時使用與陸上房屋相似的建材。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>小屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">以木頭或泥土建成的房屋，屋頂可能是用茅草製成。</p>
+            <button type="button" class="type" id="nine">
+                <p class="grouptitle"><strong>小屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">以木頭或泥土建成的房屋，屋頂可能是用茅草製成。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>農場住宿</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">位於鄉村地區的房屋，旅客可以體驗農村生活或與動物共度時光。</p>
+            <button type="button" class="type" id="ten">
+                <p class="grouptitle"><strong>農場住宿</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">位於鄉村地區的房屋，旅客可以體驗農村生活或與動物共度時光。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>圓頂屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">圓頂或球形房屋，例如氣泡屋。</p>
+            <button type="button" class="type" id="eleven">
+                <p class="grouptitle"><strong>圓頂屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">圓頂或球形房屋，例如氣泡屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>基克拉澤斯屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">位於希臘基克拉澤斯群島的白色平頂房屋。</p>
+            <button type="button" class="type" id="twelve">
+                <p class="grouptitle"><strong>基克拉澤斯屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">位於希臘基克拉澤斯群島的白色平頂房屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>度假小木屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">帶斜屋頂的木屋，常常做為滑雪或夏日度假的住宿。</p>
+            <button type="button" class="type" id="thirteen">
+                <p class="grouptitle"><strong>度假小木屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">帶斜屋頂的木屋，常常做為滑雪或夏日度假的住宿。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>義式傳統石屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">位於義大利潘泰萊里亞島的圓頂石造屋。</p>
+            <button type="button" class="type" id="fourteen">
+                <p class="grouptitle"><strong>義式傳統石屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">位於義大利潘泰萊里亞島的圓頂石造屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>燈塔</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">濱水的塔樓，配有強光可以指引船舶。</p>
+            <button type="button" class="type" id="fifteen">
+                <p class="grouptitle"><strong>燈塔</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">濱水的塔樓，配有強光可以指引船舶。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>牧人小屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">最初用於牧羊的小型四輪貨車。</p>
+            <button type="button" class="type" id="sixteen">
+                <p class="grouptitle"><strong>牧人小屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">最初用於牧羊的小型四輪貨車。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>迷你屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">面積通常不到 11 坪的獨立房屋。</p>
+            <button type="button" class="type" id="seventeen">
+                <p class="grouptitle"><strong>迷你屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">面積通常不到 11 坪的獨立房屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>普利亞斗笠屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">擁有錐形屋頂的圓柱狀石造屋，源自義大利。</p>
+            <button type="button" class="type" id="eighteen">
+                <p class="grouptitle"><strong>普利亞斗笠屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">擁有錐形屋頂的圓柱狀石造屋，源自義大利。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>古巴式家庭旅館</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">古巴式家庭旅館內的獨立房間。</p>
+            <button type="button" class="type" id="nineteen">
+                <p class="grouptitle"><strong>古巴式家庭旅館</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">古巴式家庭旅館內的獨立房間。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>韓國膳宿公寓</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">帶有燒烤和公共空間的韓國鄉村房屋。</p>
+            <button type="button" class="type" id="twenty">
+                <p class="grouptitle"><strong>韓國膳宿公寓</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">帶有燒烤和公共空間的韓國鄉村房屋。</p>
             </button>
-            <button type="button" class="type">
-                <p><strong>度假屋</strong></p>
-                <p style="font-size: 14px; color:	#9D9D9D">裝潢齊全的出租房源，包括廚房和浴室，且可能會提供前台等客房服務。</p>
+            <button type="button" class="type" id="twenty-one">
+                <p class="grouptitle"><strong>度假屋</strong></p>
+                <p style="font-size: 14px; color:#9D9D9D; width: 70%;">裝潢齊全的出租房源，包括廚房和浴室，且可能會提供前台等客房服務。</p>
             </button>
         </div>
             <div class="last-bar">
                 <button type="button" class="back"><strong>返回</strong></button>
-                <button type="button" class="next text-white">下一步</button>
+                <button type="button" class="next text-white" id="next">下一步</button>
             </div>
     </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+        const btn = document.getElementById('next');
+        window.onload = function(){
+                btn.style.backgroundColor = "#D0D0D0";
+            };
+
+        document.getElementById("one").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+
+        document.getElementById("two").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+        
+        document.getElementById("three").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+
+        document.getElementById("four").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+    
+        document.getElementById("five").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("six").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("seven").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("eight").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+            
+        document.getElementById("nine").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("ten").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+        
+            document.getElementById("eleven").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+
+        document.getElementById("twelve").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+        
+        document.getElementById("thirteen").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+
+        document.getElementById("fourteen").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+    
+        document.getElementById("fifteen").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("sixteen").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("seventeen").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("eighteen").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+            
+        document.getElementById("nineteen").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+
+        document.getElementById("twenty").onclick = function(){
+                btn.style.backgroundColor = "black";
+                btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"    
+            }};
+        
+        document.getElementById("twenty-one").onclick = function(){
+            btn.style.backgroundColor = "black";
+            btn.onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/Privacy_type.html"}};
+    </script>
 
 </body>
 </html>
