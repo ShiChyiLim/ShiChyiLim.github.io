@@ -1,101 +1,246 @@
+.title{
+    background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    left:0;
+
+}
+
+.title h1{
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.right{
+    width: 100%;
+    height: 60vh;
+    position: fixed;
+    right: 0;
+    bottom: -5vh;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;}
+
+.btn-group{
+    position: fixed;
+    top:0;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: transparent;
+    z-index: 0;
+}
+.btn-h{
+    height: 35px;
+    width: 20%;
+    background-color: black;
+    border-radius: 20px;
+    border:none;
+    margin: 10px;
+    padding: 5px 15px;
+    font-size: 10px;
+
+}
+
+.last-bar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    right:0;
+    bottom:0;   
+    background-color: white;
+    border-top: 2px solid #F0F0F0;
+    z-index: 1;
+}
+
+.back{
+    position: relative;
+    top: 0;
+    left: 10px;
+    background-color: transparent;
+    border:none;
+    text-decoration: underline;
+}
+
+.next{
+    position: relative;
+    right:10px;
+    top:0;
+    height: 50px;
+    padding:10px 15px;
+    width: 20vh;
+    border-radius:10px;
+    border: none;
+    background-color: 	#D0D0D0;
+}
+
+.map{
+    position:relative;
+    object-fit: cover;
+    width: 100% ;
+    height:100vh;
+    z-index: -2;
+    
+}
+
+.wrapper{
+    width: 80%;
+    margin: 40px 50px;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    left:0;
+}
+
+.wrapper .search-input{
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+
+.search-input input{
+    width: 100%;
+    height:55px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+}
+
+.search-input .autocom-box{
+    padding:0px; 
+    max-height:280px;
+    overflow-y: auto;
+    opacity:0;
+    pointer-events: none;
+
+}
+
+.search-input.active .autocom-box{
+    padding:10px 8px;
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    cursor:  default;
+    border-radius: 3px;
+    display:none;
+}
+
+.search-input.active .autocom-box li{
+    display: block;
+}
+
+.autocom-box li:hover{
+    background-color: #efefef;
+}
+
+.select{
+    display: none;
+}
+
+.auto:hover{
+    background-color: #F0F0F0;
+    
+}
 @media(min-width:744px){
     .title{
         background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
         background-size: cover;
         width: 50%;
-        height: 100%;
-        padding: 200px 50px 0px 50px;
+        height: 100vh;
+        display: flex;
+        justify-items: center;
+        align-items: center;
         position: fixed;
         left:0;
 
     }
+
     .title h1{
-        text-align: center;
+        margin: auto;
         font-size: 50px;
         color: white;
     }
 
     .right{
         width: 50%;
+        height: 100%;
         position: fixed;
-        right:0px;
-    }
-    .proprty-type-group{
-        margin: 100px;
-        
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
     }
     
-    .type{
-        width: 450px;
-        margin: 20px;
-        display:block;
-        display:flex;
-        justify-content:space-between;  
-        padding: 10px 30px;
-        border-radius: 10px;
-        border: 1px solid #D0D0D0;
-        background-color: transparent;
-    }
-
-    .type:hover{
-        border:2px solid black; 
-    }
-
-    .proprty-type-group img{
-        width: 60px;
-        vertical-align: middle;
-        border-radius: 5px;
-    }
-
-    .proprty-type-group p{
-        margin:15px 0px;
-        
-    }
-
     .btn-group{
         position: fixed;
         top:0;
-        right: 10px;
-        background-color: none;
-        padding-top: 20px;
-        padding-bottom: 20px; 
-        padding-left:400px;
+        justify-content: flex-end;
+        width: 50%;
+        background-color: transparent;
         z-index: 0;
     }
     .btn-h{
+        height: 35px;
+        width: 20%;
         background-color: black;
         border-radius: 20px;
         border:none;
         margin: 10px;
         padding: 5px 15px;
         font-size: 10px;
+
     }
 
     .last-bar{
         position: fixed;
-        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 80px;
         right:0;
         bottom:0;   
         background-color: white;
-        width: 50%;
-        height: 80px;
         border-top: 2px solid #F0F0F0;
+        z-index: 1;
     }
 
     .back{
-        position: fixed;
-        right:540px;
-        bottom:30px;
+        position: relative;
+        top: 0;
+        left: 10px;
         background-color: transparent;
         border:none;
         text-decoration: underline;
     }
 
     .next{
-        position: fixed;
-        right:20px;
-        bottom: 18px;
+        position: relative;
+        right:10px;
+        top:0;
+        height: 50px;
         padding:10px 15px;
+        width: 20vh;
         border-radius:10px;
         border: none;
         background-color: 	#D0D0D0;
@@ -110,7 +255,7 @@
     }
 
     .wrapper{
-        width: 450px;
+        width: 70%;
         margin: 150px auto;
         position:absolute;
         z-index: 1;
@@ -175,3 +320,4 @@
         
     }
 }
+    

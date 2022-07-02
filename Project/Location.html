@@ -12,7 +12,7 @@
 <body>
     <div class="d-flex justify-content-center">
         <div class="title">
-            <h1 class="text-white"><strong>房源的位置在哪裡？</strong></h1>
+            <h1><strong>房源的位置在哪裡？</strong></h1>
         </div>
         <div class="right">
             <div class="d-flex">
@@ -37,13 +37,16 @@
                         </svg>
                         <li style="list-style: none;padding-left: 20px;padding-top: 10px; padding-bottom: 20px; margin:10px 0px">使用目前爲止</li>
                     </div>
-                    <button style="background-color: white ; border:none; margin:10px;text-decoration: underline;font-size: 12px;"><strong>手動輸入地址</strong></button>
+                    <a href="https://shichyilim.github.io/Project/Location2.html">
+                        <button style="background-color: white ; border:none; margin:10px;text-decoration: underline;font-size: 12px;"><strong>手動輸入地址</strong></button>
+                    </a>
+                    
                 </div>
             </div>
         </div>
             <div class="last-bar">
                 <button type="button" class="back"><strong>返回</strong></button>
-                <button type="button" class="next text-white">下一步</button>
+                <button type="button" class="next text-white" id="next">下一步</button>
             </div>
         </div>
     </div>
@@ -54,7 +57,7 @@
     </script>
 
     <script>
-
+        const btn = document.getElementById('next');
         const searchWrapper = document.querySelector(".search-input");
         const inputbox = searchWrapper.querySelector("input");
         const suggbox = searchWrapper.querySelector(".autocom-box");
@@ -91,7 +94,13 @@
             }else{
                 searchWrapper.classList.remove("active");
             }
+
+            btn.style.backgroundColor = "black";
+            document.querySelector('.next').onclick= function(){
+            location.href ="https://shichyilim.github.io/Project/Location2.html";
+            }
         }
+        
 
         function select(element){
             let selectUserData = element.textContent;
@@ -111,6 +120,8 @@
             }
             suggbox.innerHTML = listData;
         }
+
+
 
     
 
