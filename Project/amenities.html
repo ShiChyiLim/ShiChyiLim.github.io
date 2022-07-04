@@ -30,48 +30,72 @@
                     <p style="font-size:24px;"><strong>房源是否設有任何獨特的設備與服務？</strong></p>
                     <div class="button-group d-flex flex-wrap">
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button" role="checkbox" ><i class="fa-solid fa-person-swimming"></i>
+                            <input type="checkbox"  id="swimming-pool" style="display: none;">
+                            <button class="button">
+                            <label for="swimming-pool" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                            <i class="fa-solid fa-person-swimming"></i>
                             <p style="margin-top: 8px; font-size: 14px;"><strong>游泳池</strong></p>
-                            </button>
+                            </label>
+                        </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-hot-tub-person"></i>
+                            <input type="checkbox" id="Massage-bath" style="display:none;">
+                            <button class="button">
+                                <label for="Massage-bath" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-hot-tub-person"></i>
                             <p style="margin-top: 8px; font-size: 14px;"><strong>按摩浴池</strong></p>
+                                </label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-house"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>庭院</strong><p>
+                            <input type="checkbox" id="Garden" style="display:none;">
+                            <button class="button">
+                            <label for="Garden" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                <i class="fa-solid fa-house"></i>
+                                <p style="margin-top: 8px; font-size: 14px;"><strong>庭院</strong><p>
+                                </label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-drumstick-bite"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>烤肉區</strong></p>
+                            <input type="checkbox" id="Barbeque" style="display:none;">
+                            <button class="button">
+                                <label for="Barbeque" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-drumstick-bite"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>烤肉區</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5 ">
-                            <button type="button" class="button"><i class="fa-solid fa-fire-burner"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>火坑</strong><p>
+                            <input type="checkbox" id="fire-burner" style="display:none;">
+                            <button class="button">
+                            <label for="fire-burner" style="width:100%; height:100%;padding:40px; cursor: pointer;"><i class="fa-solid fa-fire-burner"></i>
+                                <p style="margin-top: 8px; font-size: 14px;"><strong>火坑</strong><p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-bowling-ball"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>撞球桌</strong></p>
+                            <input type="checkbox" id="bowling-ball" style="display:none;">
+                            <button  class="button">
+                                <label for="bowling-ball" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-bowling-ball"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>撞球桌</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-fire-flame-curved"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>室内壁爐</strong></p>
+                            <input type="checkbox" id="fire-flame" style="display:none;">
+                            <button  class="button"><label for="fire-flame" style="width:100%; height:100%;padding:40px; cursor: pointer;"><i class="fa-solid fa-fire-flame-curved"></i>
+                                <p style="margin-top: 8px; font-size: 14px;"><strong>室内壁爐</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-utensils"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>戶外用餐區</strong></p>
+                            <input type="checkbox" id="Outdoor-dining-area" style="display:none;">
+                            <button class="button"><label for="Outdoor-dining-area" style="width:100%; height:100%;padding:40px; cursor: pointer;"><i class="fa-solid fa-utensils"></i>
+                                <p style="margin-top: 8px; font-size: 14px;"><strong>戶外用餐區</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-dumbbell"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>運動器材</strong></p>
+                            <input type="checkbox" id="Sports-equipment" style="display:none;">
+                            <button class="button">
+                                <label for="Sports-equipment" style="width:100%; height:100%;padding:40px; cursor: pointer;"><i class="fa-solid fa-dumbbell"></i>
+                                <p style="margin-top: 8px; font-size: 14px;"><strong>運動器材</strong></p></label>
                             </button>
                         </div>
                     </div>
@@ -82,48 +106,75 @@
                     <p style="font-size:24px;"><strong>這些最受旅客歡迎的設備與服務呢？</strong></p>
                     <div class="button-group d-flex flex-wrap">
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-wifi"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>WIFI</strong></p>
+                            <input type="checkbox" id="WiFi" style="display:none;">
+                            <button class="button">
+                                <label for="WiFi" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>WIFI</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-tv"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>電視</strong></p>
+                            <input type="checkbox" id="Television" style="display:none;">
+                            <button class="button">
+                                <label for="Television" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>電視</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-kitchen-set"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>廚房</strong><p>
+                            <input type="checkbox" id="Kitchen" style="display:none;">
+                            <button type="button" class="button">
+                                <label for="Kitchen" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-kitchen-set"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>廚房</strong><p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-jug-detergent"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>洗衣機</strong></p>
+                            <input type="checkbox" id="Detergent" style="display:none;">
+                            <button type="button" class="button">
+                                <label for="Detergent" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-jug-detergent"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>洗衣機</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-car"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>建築物內免費停車</strong><p>
+                            <input type="checkbox" id="Free-carpark" style="display:none;">
+                            <button class="button">
+                                <label for="Free-carpark" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-car"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>建築物內免費停車</strong><p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-circle-dollar-to-slot"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>建築物內有收費停車位</strong></p>
+                            <input type="checkbox" id="Charge-carpark" style="display:none;">
+                            <button class="button">
+                                <label for="Charge-carpark" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>建築物內有收費停車位</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-fan"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>空調設備</strong></p>
+                            <input type="checkbox" id="Air-con" style="display:none;">
+                            <button class="button">
+                                <label for="Air-con" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-fan"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>空調設備</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-briefcase"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>專門工作空間</strong></p>
+                            <input type="checkbox" id="Work-Area" style="display:none;">
+                            <button class="button">
+                                <label for="Work-Area" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>專門工作空間</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-bath"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>戶外淋浴空間</strong></p>
+                            <input type="checkbox" id="outdoor-bath-cubicle" style="display:none;">
+                            <button class="button">
+                                <label for="outdoor-bath-cubicle" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>戶外淋浴空間</strong></p></label>
                             </button>
                         </div>
                     </div>
@@ -134,28 +185,43 @@
                     <p style="font-size:24px;"><strong>是否備有以下保安設備？</strong></p>
                     <div class="button-group d-flex flex-wrap">
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-circle-exclamation"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>煙霾警報器</strong></p>
+                            <input type="checkbox" id="Smog-alarms" style="display:none;">
+                            <button class="button">
+                                <label for="Smog-alarms" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>煙霾警報器</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-kit-medical"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>急救包</strong></p>
+                            <input type="checkbox" id="Kit-medical" style="display:none;">
+                            <button class="button">
+                                <label for="Kit-medical" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-kit-medical"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>急救包</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-circle-exclamation"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>一氧化碳警報器</strong><p>
+                            <input type="checkbox" id="Carbon-monoxide-alarm" style="display:none;">
+                            <button class="button">
+                                <label for="Carbon-monoxide-alarm" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-circle-exclamation"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>一氧化碳警報器</strong><p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-lock"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>帶鎖的臥室</strong></p>
+                            <input type="checkbox" id="lock" style="display:none;">
+                            <button class="button">
+                                <label for="lock" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>帶鎖的臥室</strong></p></label>
                             </button>
                         </div>
                         <div class="col-xl-4 col-5">
-                            <button type="button" class="button"><i class="fa-solid fa-fire-extinguisher"></i>
-                            <p style="margin-top: 8px; font-size: 14px;"><strong>滅火器</strong><p>
+                            <input type="checkbox" id="Fire-extinguisher" style="display:none;">
+                            <button class="button">
+                                <label for="Fire-extinguisher" style="width:100%; height:100%;padding:40px; cursor: pointer;">
+                                    <i class="fa-solid fa-fire-extinguisher"></i>
+                                    <p style="margin-top: 8px; font-size: 14px;"><strong>滅火器</strong><p></label>
                             </button>
                         </div>
                         
@@ -166,7 +232,7 @@
 
             <div class="last-bar">
                 <button type="button" class="back"><strong>返回</strong></button>
-                <button type="button" class="next text-white">下一步</button>
+                <button type="button" class="next text-white" id="next">下一步</button>
             </div>
         </div>
     </div>
@@ -175,11 +241,11 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/ed5018315e.js" crossorigin="anonymous"></script>
-    
+
     <script>
-        // document.querySelector("#swimming-pool").onclick = function(){
-        //     document.querySelector("#swimming-pool").style.border = "1px solid black";
-        // }
+        document.getElementById("next").onclick=function(){
+            location.href = "https://shichyilim.github.io/Project/photo.html";
+        }
     </script>
 
 
