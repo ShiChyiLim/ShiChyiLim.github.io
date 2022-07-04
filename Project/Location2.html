@@ -102,7 +102,7 @@
             </div>
             <div class="last-bar">
                 <button type="button" class="back"><strong>返回</strong></button>
-                <button type="button" class="next text-white">下一步</button>
+                <button type="button" class="next text-white" id="next">下一步</button>
             </div>
         </div>
     </div>
@@ -113,12 +113,17 @@
     <script>
         document.querySelector("#lookgood").onclick = function(){
             if(document.querySelector("input").value.length==0){
-                alert("no");
+                alert("請填寫所有空白處！");
             }
             else{
-                location.href = "ShiChyiLim.github.io/Project/Location.html"
+                location.href = "https://shichyilim.github.io/Project/floor-plan.html";
             }
-        }        
+        }
+
+        
+
+        
+
         
     </script>
 </body>

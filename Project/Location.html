@@ -35,7 +35,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cursor-fill" viewBox="0 0 16 16" style="margin-top:20px; margin-left:20px;background-color:#F0F0F0 ;border-radius:50%;width:30px; height:20px;">
                             <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z"/>
                         </svg>
-                        <li style="list-style: none;padding-left: 20px;padding-top: 10px; padding-bottom: 20px; margin:10px 0px">使用目前爲止</li>
+                        <li style="list-style: none;padding-left: 20px;padding-top: 10px; padding-bottom: 20px; margin:10px 0px" onclick=" gettingPosition()" id="getposition">使用目前爲止</li>
                     </div>
                     <a href="https://shichyilim.github.io/Project/Location2.html">
                         <button style="background-color: white ; border:none; margin:10px;text-decoration: underline;font-size: 12px;"><strong>手動輸入地址</strong></button>
@@ -100,6 +100,7 @@
             location.href ="https://shichyilim.github.io/Project/Location2.html";
             }
         }
+            
         
 
         function select(element){
@@ -120,10 +121,41 @@
             }
             suggbox.innerHTML = listData;
         }
+        
+        document.getElementById("getposition").onclick= function(){
+            location.href = "https://shichyilim.github.io/Project/Location2.html";
+        }
 
+        function gettingPosition(){
+        if(navigator.geolocation){
+        return new Promise((resolve, reject) => {
+            let option = {
+                enableAcuracy:false, // 提高精確度
+                maximumAge:0, // 設定上一次位置資訊的有效期限(毫秒)
+                timeout:10000 // 逾時計時器(毫秒)
+            };
+            navigator.geolocation.getCurrentPosition(resolve, reject, option);
+            
+        })
+        }else{
+        alert("Does not support positioning!");
+        }
+        }
 
-
+    function successCallback(position){
+    console.log(position);
     
+
+    }
+    function errorCallback(error) {
+    alert(error.message); //error.code
+    }
+
+
+gettingPosition()
+.then(position => successCallback(position))
+.catch(error => errorCallback(error))
+
 
     </script>
 </body>

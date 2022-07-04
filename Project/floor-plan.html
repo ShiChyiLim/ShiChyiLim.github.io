@@ -20,8 +20,8 @@
         <div class="right">
             <div class="d-flex">
                 <div class="btn-group">
-                    <button type="button" class="btn-h text-white"><strong>協助</strong></button>
-                    <button type="button" class="btn-h text-white"><strong>儲存並退出</strong></button>
+                    <button type="button" class="btn-h text-black"><strong>協助</strong></button>
+                    <button type="button" class="btn-h text-black"><strong>儲存並退出</strong></button>
                 </div>
             </div>
             <div class="floor-plan">
@@ -60,7 +60,7 @@
                 <p style="margin:50px 25px 25px 25px; font-size:18px;"><strong>有任何房客專用的浴室嗎？</strong></p>
                 <div class="form-check d-flex justify-content-between ps-4 pb-3">
                     <div class="text">
-                        <label class="form-check-label" for="flexRadioDefault1" style="padding-right:60vh;">
+                        <label class="form-check-label" for="flexRadioDefault1">
                         有
                     </label>
                     </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="form-check d-flex justify-content-between ps-4 pb-3">
                     <div class="text">
-                        <label class="form-check-label" for="flexRadioDefault2" style="padding-right:37vh;">
+                        <label class="form-check-label" for="flexRadioDefault2" >
                         沒有，浴室都是共用的
                     </label>
                     </div>
@@ -227,8 +227,12 @@
             document.getElementById("num4").value = value;
         }
 
+        document.querySelector(".next").onclick = function(){
+            location.href = "https://shichyilim.github.io/Project/amenities.html";
+        }
+    
     </script>
-    <link rel="stylesheet" href="floor-plan.js">
+    
 </body>
 
 </html>
