@@ -1,80 +1,197 @@
-@media(min-width:744px){
+.title{
+    background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    position: fixed;
+    left:0;
+
+}
+.title h1{
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+.right{
+    width: 100%;
+    height: 60vh;
+    position: fixed;
+    right: 0;
+    bottom: -15vh;
+    overflow: scroll;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-group{
+    width: 100%;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    justify-content: flex-end;
+    z-index: 0;
+}
+.btn-h{
+    width: 20%;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    border:none;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.last-bar{
+    position: fixed;
+    width: 100%;
+    right:0;
+    bottom:0;   
+    background-color: white;
+    padding: 20px;
+    border-top: 2px solid #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border:none;
+    text-decoration: underline;
+}
+
+.next{
+    position: relative;
+    right:0;
+    top:0;
+    padding:10px 15px;
+    width: 30vh;
+    border-radius:10px;
+    border: none;
+    background-color: black;
+}
+
+.legal{
+    position: relative;
+    top: 5vh;
+    margin-left: 50px;
+    width: 100%;
+    height: 28vh;
+    padding-right: 20vh;
+    overflow: scroll;
+
+}
+
+.form-check{
+    padding:10px;
+}
+
+.text{
+    text-align: start;
+    width: 99%;
+    }
+a{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+width: 0px;
+}
+
+.form-check-input:checked{
+    background-color:black;
+    border-color:black;
+}
+.form-check-input:focus{
+    border-color:rgb(37, 35, 35);
+    box-shadow:0 0 0 0.25rem rgba(49, 51, 53, 0.25);
+}
+
+@media(min-width:800px){
     .title{
         background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
         background-size: cover;
         width: 50%;
         height: 100vh;
-        /* padding: 200px 50px 0px 50px; */
+        display: flex;
+        align-items: center;
         position: fixed;
         left:0;
 
     }
     .title h1{
-        position: absolute;
-        z-index:2;
-        bottom: 35vh;
-        padding:38px;
-        color: white;
-        font-size: 48px;
-        letter-spacing: -0.02em;
-        line-height: 55px;
+        text-align: center;
+            font-size: 50px;
     }
 
     .right{
         width: 50%;
-        position: fixed;
-        right: 0px;
         height: 100vh;
+        position: fixed;
+        right: 0;
+        bottom: 0;
     }
 
     .btn-group{
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 400px;
-        width: 50%;
-        z-index: 0;
-        background-color: white;
+            position: fixed;
+            top:0;
+            right:0;
+            width: 50%;
+            background-color: white;
+            z-index: 0;
+            justify-content: flex-end;
     }
     .btn-h{
-        background-color: #F0F0F0;
-        border-radius: 20px;
-        border:none;
-        margin: 10px;
-        padding: 5px 15px;
-        font-size: 10px;
+            height: 35px;
+            width: 20%;
+            background-color: #F0F0F0;
+            border-radius: 20px;
+            border:none;
+            margin: 10px;
+            padding: 5px 15px;
+            font-size: 10px;
     }
 
     .last-bar{
-        position: fixed;
-        z-index: 1;
-        right: 0;
-        bottom: 0;
-        background-color: white;
-        width: 50%;
-        height: 80px;
-        border-top: 2px solid #F0F0F0;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            right:0;
+            bottom:0;   
+            background-color: white;
+            width: 50%;
+            border-top: 2px solid #F0F0F0;
     }
 
     .back{
-        position: fixed;
-        right: 540px;
-        bottom: 30px;
-        background-color: transparent;
-        border: none;
-        text-decoration: underline;
+        position: relative;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            border:none;
+            text-decoration: underline;
     }
 
     .next{
-        position: fixed;
-        right: 20px;
-        bottom: 18px;
-        padding: 10px 15px;
-        border-radius: 10px;
-        border: none;
-        background-color: #D0D0D0;
+        position: relative;
+            right:0;
+            top:0;
+            padding:10px 15px;
+            width: 30vh;
+            border-radius:10px;
+            border: none;
+            background-color: black;
     }
 
     .legal{
@@ -84,7 +201,8 @@
         height: 80vh;
         z-index: 1;
         overflow-y: scroll;
-        padding: 8vh;
+        padding-left:3vh;
+        padding-top: 8vh;
 
     }
 

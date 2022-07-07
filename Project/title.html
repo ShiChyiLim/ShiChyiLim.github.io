@@ -18,8 +18,8 @@
         <div class="right">
             <div class="d-flex">
                 <div class="btn-group">
-                    <button type="button" class="btn-h text-white"><strong>協助</strong></button>
-                    <button type="button" class="btn-h text-white"><strong>儲存並退出</strong></button>
+                    <button type="button" class="btn-h text-black"><strong>協助</strong></button>
+                    <button type="button" class="btn-h text-black"><strong>儲存並退出</strong></button>
                 </div>
                 
                 <div class="title">
@@ -29,7 +29,7 @@
 
                 <div class="last-bar">
                     <button type="button" class="back"><strong>返回</strong></button>
-                    <button type="button" class="next text-white">下一步</button>
+                    <button type="button" class="next text-white" id="next">下一步</button>
                 </div>
             </div>
         </div>
@@ -38,6 +38,26 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
+    <script>
+
+        document.querySelector("textarea").onkeyup = function(){
+            document.querySelector('#next').style.background= "black";
+            document.querySelector("#next").onclick = function(){
+                location.href = "https://shichyilim.github.io/Project/description.html";
+            }
+        }
+
+
+        // document.querySelector("#next").onclick = function(){
+        //     if(document.querySelector("textarea").value.length==0){
+        //         alert("請填寫空白處");
+        //     }
+        //     else{
+        //         location.href = "https://shichyilim.github.io/Project/description.html";
+        //     }
+        // }
+        
+    </script>
     
 
 

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="d-flex">
-        <div class="left position-relative" style="width:50%;">
+        <div class="left">
             <video autoplay controls muted loop class="video"   style="object-fit: cover; object-position:center top;">
                 <source src="https://a0.muscache.com/v/d6/12/d6120feb-75fc-52dd-b5bb-5755913fb756/d6120feb75fc52ddb5bb5755913fb756_4000k_1.mp4" type="video/mp4" style="box-sizing: border-box;" playsinline preload ="auto">
             </video>
@@ -18,8 +18,8 @@
         <div class="right">
             <div class="d-flex">
                 <div class="btn-group">
-                    <button type="button" class="btn-h text-white"><strong>協助</strong></button>
-                    <button type="button" class="btn-h text-white"><strong>儲存並退出</strong></button>
+                    <button type="button" class="btn-h text-black"><strong>協助</strong></button>
+                    <button type="button" class="btn-h text-black"><strong>儲存並退出</strong></button>
                 </div>
                 <div class="photoarea" id="photoarea">
                     <input type="file" id="fileUploader" class="d-none" onchange="handleFiles(this.files)">
@@ -38,7 +38,7 @@
 
                 <div class="last-bar">
                     <button type="button" class="back"><strong>返回</strong></button>
-                    <button type="button" class="next text-white">下一步</button>
+                    <button type="button" class="next text-white" id="next">下一步</button>
                 </div>
             </div>
         </div>
@@ -86,8 +86,8 @@
             const img = document.createElement("img");
             img.classList.add("obj");
             img.file = file;
-            img.style.width= "300px";
-            img.style.height="auto";
+            img.style.width= "auto";
+            img.style.height="300px";
             preview.appendChild(img);
 
             const reader = new FileReader();
@@ -113,6 +113,11 @@
     dropbox.addEventListener("dragleave", dragleave, false);
     dropbox.addEventListener("dragover", dragover, false);
     dropbox.addEventListener("drop", drop, false);
+
+
+    document.getElementById("next").onclick = function(){
+        location.href= "https://shichyilim.github.io/Project/title.html";
+    }
     </script>
 
 

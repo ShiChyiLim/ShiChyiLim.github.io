@@ -1,17 +1,157 @@
+.title{
+    background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: block;
+    position: fixed;
+    left:0;
+
+}
+.title h1{
+        width: 100%;
+        position: relative;
+        top:10vh;
+        color: white;
+        font-size: 32px;
+        letter-spacing: -0.03em;
+        line-height: 50px;
+        padding-left: 2vh;
+}
+
+.descrip{
+    position: relative;
+    top: 10vh;
+    color: white;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    line-height: 20px;
+    padding-left: 2vh;
+}
+
+.right{
+    width: 100%;
+    height: 60vh;
+    position: fixed;
+    right: 0;
+    bottom: 3vh;
+    overflow: scroll;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-group{
+    width: 100%;
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: transparent;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    justify-content: flex-end;
+    z-index: 0;
+}
+.btn-h{
+    width: 20%;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    border:none;
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.last-bar{
+    position: fixed;
+    width: 100%;
+    right:0;
+    bottom:0;   
+    background-color: white;
+    padding: 20px;
+    border-top: 2px solid #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border:none;
+    text-decoration: underline;
+}
+
+.next{
+    position: relative;
+    right:0;
+    top:0;
+    padding:10px 15px;
+    width: 20vh;
+    border-radius:10px;
+    border: none;
+    background-image: radial-gradient(circle at center, #FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 75%, #BD1E59 100% ) !important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.previewarea{
+    position:relative;
+    top:0;
+    right: 0vh;
+    width: 100%;
+    height: 50vh;
+    padding: 18px;
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+}
+
+.area{
+    height: 100%;
+    width: 100%;
+    border:1px solid #D0D0D0;
+    overflow-y:scroll;
+    border-radius: 20px;
+}
+
+.pic{
+    display: block;
+    max-height: 300px;
+    width: 100%;
+    
+}
+
+img{
+    width:100%;
+    height:100%;
+    background-size: 100%;
+    
+}
+
+.text-descrip{
+background-color: white;
+position: relative;
+padding: 15px;}
+
 @media(min-width:744px) {
     .title{
         background: url(https://a0.muscache.com/im/pictures/Hosting/Gradient/original/4abb91ab-2c70-46d7-80a5-9c83ef0221ef.png) no-repeat;
         background-size: cover;
         width: 50%;
         height: 100vh;
-        padding: 35vh 30px 0px 20px;
+        display: block;
         position: fixed;
         left:0;
+        
 
     }
 
     .title h1{
-        z-index:2;
+        position: relative;
+        top:45vh;
         padding-left:38px;
         color: white;
         font-size: 48px;
@@ -22,10 +162,10 @@
     }
 
     .descrip{
-        /* position: absolute; */
-        z-index:2;
-        bottom: 15vh;
-        padding:38px;
+        position: relative;
+        top: 45vh;
+        padding-left:38px;
+        padding-top: 5vh;
         color: white;
         font-size: 23px;
         letter-spacing: -0.02em;
@@ -34,85 +174,76 @@
 
     .right {
         width: 50%;
+        height: 100vh;
         position: fixed;
-        right: 0px;
+        right: 0;
+        bottom: 0;
     }
 
 
     .btn-group {
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        padding-left: 400px;
-        width: 50%;
-        z-index: 0;
-        background-color: white;
+            position: fixed;
+            top:0;
+            right:0;
+            width: 50%;
+            background-color: white;
+            z-index: 0;
+            justify-content: flex-end;
     }
 
     .btn-h {
-        background-color: black;
-        border-radius: 20px;
-        border: none;
-        margin: 10px;
-        padding: 5px 15px;
-        font-size: 10px;
-        color: white;
+        height: 35px;
+            width: 20%;
+            background-color: #F0F0F0;
+            border-radius: 20px;
+            border:none;
+            margin: 10px;
+            padding: 5px 15px;
+            font-size: 10px;
     }
 
     .last-bar {
         position: fixed;
-        z-index: 1;
-        right: 0;
-        bottom: 0;
-        background-color: white;
+        display: flex;
+        justify-content: space-between;
         width: 50%;
-        height: 80px;
+        right:0;
+        bottom:0;   
+        background-color: white;
+        padding: 20px;
         border-top: 2px solid #F0F0F0;
     }
 
     .back {
-        position: fixed;
-        right: 540px;
-        bottom: 30px;
+        position: relative;
+        top: 0;
+        left: 0;
         background-color: transparent;
-        border: none;
+        border:none;
         text-decoration: underline;
     }
 
     .next {
-        position: fixed;
-        right: 20px;
-        bottom: 18px;
-        padding: 10px 15px;
-        border-radius: 10px;
+        position: relative;
+        right:0;
+        top:0;
+        padding:10px 15px;
+        width: 20vh;
+        border-radius:10px;
         border: none;
-        background-color: #D0D0D0;
+        background-image: radial-gradient(circle at center, #FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 75%, #BD1E59 100% ) !important;
     }
 
     ::-webkit-scrollbar {
         width: 0px;
     }
 
-    .button{
-        width: 90%;
-        margin:0px 8px 16px;
-        height: 25vh;
-        border:1px solid #D0D0D0;
-        background-color: white;
-        border-radius: 10px;
-    }
-
-    .button:hover{
-        border:2px solid black;
-    }
 
     .previewarea{
-            position:fixed;
+            position:relative;
             top:20vh;
-            right: 18vh;
-            width: 30%;
+            right: -25%;
+            width: 50%;
             height: 63vh;
             z-index:1;
             padding: 18px;
