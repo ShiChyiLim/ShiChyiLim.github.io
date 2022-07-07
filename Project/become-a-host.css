@@ -9,7 +9,6 @@
         display: block;
         height: 100vh;
         width: 100%;
-        /* float: right; */
         position: relative;
         box-sizing: border-box;
         top:0vh;
@@ -74,9 +73,6 @@ a{
 @media(min-width:744px){
     .video-banner{
         display: flex;
-        background-color: black; 
-        height: 100vh; 
-        width: 100%;
     }
 
     .video{
@@ -84,13 +80,11 @@ a{
         height: 100%;
         width: 50%;
         float: right;
-        box-sizing: border-box;
         top:0;
     }
     .banner-title{
     width: 50%;
     text-align: center;
-    position: relative;
     top: 0vh;
     background-color: transparent;
     }
@@ -101,26 +95,14 @@ a{
     }
 
     .banner-title h1{
-    font-size: 40px;
     text-align: center;
-    letter-spacing: -0.02em;
-    color: white;
 
         }
     .banner-title p{
-        font-size:15px;
         text-align: center;
-        color: white;
-
         }
 
     .start{
-        background-color: 	#F00078;
-        padding: 10px 20px ;
-        margin: auto;
-        margin-bottom: 50px;
-        margin-top: 80px;
-        display: block;
         width: 30vh;
     }
 
@@ -134,10 +116,6 @@ a{
     color: white;
     font-size: 12px;
     display: block;
-}
-
-.btn-quit:hover{
-    color: black;
 }
 
 }
